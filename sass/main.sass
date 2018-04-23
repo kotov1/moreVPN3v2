@@ -117,7 +117,7 @@ ul
 		margin-top: 10px
 		padding-left: 35px
 		background: url('../img/icons/guarantee.png') no-repeat 0 0
-		color: #383c43		
+		color: #383c43	
 	input
 		padding: 1.1rem .5rem .9rem 2rem
 		font: 16px $think_font
@@ -141,7 +141,6 @@ ul
 	padding-left: 35px
 	&-title
 		position: relative
-		
 		&::before
 			content: ''
 			display: block
@@ -175,7 +174,6 @@ ul
 
 	&-accordion
 		margin-top: 1rem
-		background-color: transparent
 		.card
 			border: none
 			background-color: transparent
@@ -217,8 +215,6 @@ ul
 			&:focus
 				outline: 2px solid #f7c04f
 				border: none
-			&
-			
 			img
 				display: none
 				margin-left: 18px
@@ -293,9 +289,6 @@ ul
 			.tarrifs-purchase
 				background-color: darken(#24c25c, 10%)
 				transition: all .2s
-				// &:hover
-					// background-color: darken(#24c25c, 10%)
-					// transition: all .2s
 
 	&-description
 		margin: 0
@@ -480,13 +473,34 @@ ul
 		display: inline-block
 		margin: 10px 5px
 .trusted
-	padding: 2rem 0 2.5rem
+	padding: 3rem 0
 	&-title
+		margin-bottom: 1.8rem
 		font: 1.625rem $bold_font
 		color: #212121
 		text-align: center
 	img
 		max-width: 47%
+	img[src*="forbes"]
+		height: 27px
+	img[src*="yahoo"]
+		height: 28px
+	img[src*="business"]
+		height: 26px
+	img[src*="pc"]
+		height: 29px
+	img[src*="msn"]
+		height: 29px
+	img[src*="cbs"]
+		height: 27px
+	img[src*="network"]
+		height: 29px
+	img[src*="kiplinger"]
+		height: 31px
+	img[src*="register"]
+		height: 29px
+	img[src*="att"]
+		height: 33px
 .sponsored
 	padding: 2rem 0
 	&-title
@@ -495,6 +509,54 @@ ul
 		text-align: center
 	img
 		max-width: 45%
+	img[src*="eff"]
+		height: 43px
+	img[src*="future"]
+		height: 29px
+	img[src*="access"]
+		height: 50px
+	img[src*="krita"]
+		height: 49px
+	img[src*="hacks"]
+		height: 40px
+	img[src*="usenix"]
+		height: 34px
+	img[src*="society"]
+		height: 40px
+	img[src*="gnome"]
+		height: 38px
+	img[src*="ces"]
+		height: 45px
+	img[src*="wire"]
+		height: 33px
+	img[src*="encrypt"]
+		height: 36px
+	img[src*="blender"]
+		height: 42px
+	img[src*="fff"]
+		height: 44px
+	img[src*="apache"]
+		height: 46px
+	img[src*="tnabc"]
+		height: 38px
+	img[src*="xindex"]
+		height: 39px
+	img[src*="blockexp"]
+		height: 31px
+	img[src*="btct"]
+		height: 44px
+	img[src*="sfc"]
+		height: 45px
+	img[src*="freenode"]
+		height: 35px
+	img[src*="org"]
+		height: 35px
+	img[src*="rightscon"]
+		height: 44px
+	img[src*="lfa"]
+		height: 35px
+	img[src*="itu"]
+		height: 57px
 
 
 
@@ -586,6 +648,205 @@ ul
 .thanks-page
 	.header
 		background-position: 45% 100%
+		position: relative
+		min-height: 415px
+		&::before
+			content: ''
+			display: block
+			width: 100%
+			height: 100%
+			position: absolute
+			left: 0
+			top: 0
+			background-color: #fff
+			z-index: 0
+	.page-heading
+		margin-bottom: 2rem
+	.info
+		overflow-x: hidden
+		&-title
+			margin-bottom: 1.5rem
+			font: 1.125rem $medium_font
+			color: #262527
+			
+		&-device
+			font: 1.125rem $medium_font
+			color: #292929
+			text-transform: uppercase
+			letter-spacing: 2px
+			&-descr
+				font-family: $think_font
+				color: #262527
+		&-os
+			padding: 1rem
+			&-icon
+				display: inline-block
+				width: 55px
+				height: 55px
+				background: url('../img/icons/os-sprite.png') no-repeat
+			&-andr
+				margin-right: 15px
+				background-position: 0 0
+			&-ios
+				background-position: -64px 0
+			&-win
+				margin-right: 15px
+				background-position: -127px 0
+			&-app
+				background-position: -190px 0
+
+
+	.faq
+		padding: 2rem 0
+		color: #fff
+		font-family: $think_font
+		background-color: #262527
+		&-title
+			display: inline-block
+			position: relative
+
+		&-list
+			padding-left: 1rem
+			list-style-type: disc
+			.faq-link
+				color: rgba(#fff, .8)
+		&-link
+			display: inline-block
+			position: relative
+			margin-bottom: 1rem
+			color: #fff
+			text-decoration: none
+			cursor: pointer
+			&:hover
+				text-decoration: none
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				bottom: 0
+				left: 0
+				background-color: #fff
+				visibility: hidden
+				visibility: visible
+				transform: scaleX(1)
+				transition: all .3s
+			&:hover::after
+				transform: scaleX(0)
+				transition: all .4s
+
+
+
+.payment-page
+	min-height: 100vh
+	height: 1px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	background: #fff
+	background-size: cover
+	.header
+		min-height: auto
+		background: none
+	.footer
+		margin-top: auto
+
+.payment-wait
+	min-width: 290px
+	position: fixed
+	top: 32%
+	left: 50%
+	transform: translate(-50%, -50%)
+
+.payment-wait-outer, .payment-wait-inner
+	margin: 0 auto
+	position: relative
+	color: #fff
+	text-align: center
+	border-radius: 50%
+	transition: .5s ease-in-out
+		
+.payment-wait-outer
+	width: 28px
+	height: 28px
+.payment-wait-inner
+	border: 2px solid #9c9c9c
+	width: 28px
+	height: 28px
+.payment-wait-outer::before,
+.payment-wait-inner::before,
+.payment-wait-inner::after
+	content: ''
+	position: absolute
+	border: 5px solid #9c9c9c
+	left: -20px
+	right: -20px
+	top: -20px
+	bottom: -20px
+	border-radius: 50%
+	animation: pulse 2.4s linear infinite
+	opacity: 0
+.payment-wait-inner::after 
+	animation-delay: 0.8s
+.payment-wait-outer::before
+	animation-delay: 1.6s
+
+.payment-wait-outer::after
+	content: ''
+	position: absolute
+	bottom: -40px
+	left: 50%
+	transform: translateX(-50%)
+	background-color: rgba(1, 52, 107,.5)
+	border-radius: 50%
+	display: block
+	width: 40px
+	height: 5px
+
+
+.payment-wait-text
+	margin-top: 60px
+	font: 14px $think_font
+	text-align: center
+	&-accent
+		text-transform: uppercase
+		color: #00faa5
+
+.payment-complete
+	display: none
+	width: 13px
+	height: 10px
+	margin: 0 auto
+	background: url('../img/icons/complete.png') no-repeat 50% 50%
+
+.payment-wait
+	&.completed
+		.payment-wait-outer, .payment-wait-inner
+			background-color: #00faa5
+			border-color: #00faa5
+		.payment-wait-outer::before,
+		.payment-wait-inner::before,
+		.payment-wait-inner::after
+			border-color: #00faa5
+			animation-play-state: paused
+		.payment-complete
+			display: inline-block
+
+@keyframes pulse
+	0%
+		transform: scale(0.5)
+		opacity: 0
+		border-width: 4px
+
+	50%
+		opacity: 1
+		border-width: 1px
+
+	100%
+		transform: scale(1.2)
+		opacity: 0
+		border-width: 0
+
 
 
 
